@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <script>
+      window.$ = window.jQuery = require('jquery');
+    </script>
+    <script src="renderer.js"></script>
+    <h1>Hello World!</h1>
+    We are using io.js <script>document.write(process.version)</script>
+    and Electron <script>document.write(process.versions['electron'])</script>.
+
+    <div id="dbrows">
+      <h2>Database Rows</h2>
+    </div>
+    <script>
+      $( document ).ready(function() {
+          db.each("SELECT rowid AS id, info FROM lorem", function(err, row) {
+            $('#dbrows').append(row.id + ": " + row.info + "<br />");
+          });
+      });
+    </script>
+  </body>
+</html>

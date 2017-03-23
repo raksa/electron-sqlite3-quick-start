@@ -1,0 +1,31 @@
+{
+  "name": "electron-sqlite3-quick-start",
+  "version": "1.0.0",
+  "description": "An example of electron with sqlite3",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "rebuild": "electron-rebuild -f -w sqlite3"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo",
+    "example",
+    "sqlite3"
+  ],
+  "author": "Raksa Eng",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "~1.6.2",
+    "electron-prebuilt": "^1.4.13",
+    "electron-rebuild": "^1.5.7"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "sqlite3": "^3.1.8"
+  }
+}
