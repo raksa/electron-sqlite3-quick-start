@@ -1,26 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <script>
-      window.$ = window.jQuery = require('jquery');
-    </script>
-    <script src="renderer.js"></script>
-    <h1>Hello World!</h1>
-    We are using io.js <script>document.write(process.version)</script>
-    and Electron <script>document.write(process.versions['electron'])</script>.
 
-    <div id="dbrows">
-      <h2>Database Rows</h2>
-    </div>
-    <script>
-      $( document ).ready(function() {
-          db.each("SELECT rowid AS id, info FROM lorem", function(err, row) {
-            $('#dbrows').append(row.id + ": " + row.info + "<br />");
-          });
+<head>
+  <title>Hello World!</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <script>
+    window.$ = window.jQuery = require('jquery');
+  </script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="renderer.js"></script>
+</head>
+
+<body>
+  <h1>Hello World!</h1>
+  We are using io.js
+  <script>
+    document.write(process.version)
+  </script>
+  and Electron
+  <script>
+    document.write(process.versions['electron'])
+  </script>.
+
+  <div>
+    <h2>Database Rows</h2>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Info</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+  <script>
+    $(document).ready(function () {
+      db.each("SELECT rowid AS id, info FROM info_table", function (err, row) {
+        var tr = "<tr>" +
+          "<th scope=\"row\">" + row.id + "</th>" +
+          "<td>" + row.info + "</td>" +
+          "</tr>";
+        $('#tableBody').append(tr);
       });
-    </script>
-  </body>
+      db.close();
+    });
+  </script>
+</body>
+
 </html>
