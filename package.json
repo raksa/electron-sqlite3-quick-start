@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "rebuild": "electron-rebuild -f -w sqlite3"
+    "rebuild": "electron-rebuild -f -w sqlite3",
+    "package": "electron-packager . --production"
   },
   "repository": "https://github.com/raksa/electron-sqlite3-quick-start",
   "keywords": [
@@ -20,7 +21,8 @@
   "author": "Raksa Eng",
   "license": "MIT",
   "devDependencies": {
-    "electron": "~1.6.2",
+    "electron": "^1.4.15",
+    "electron-packager": "^8.6.0",
     "electron-prebuilt": "^1.4.13",
     "electron-rebuild": "^1.5.7"
   },
