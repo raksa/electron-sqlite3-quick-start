@@ -4,20 +4,20 @@ An example of electron app with sqlite3
 
 Make running
 ````
->cd electron-sqlite3-quick-start
+$ git clone https://github.com/raksa/electron-sqlite3-quick-start.git
 
->npm install
+$ cd electron-sqlite3-quick-start
 
->npm run rebuild
+$ npm install
 
->npm run start
+$ npm run rebuild
+
+$ npm run start
 ````
 
 Make packaging
 ````
->cd electron-sqlite3-quick-start
+$ npm install
 
->npm install
-
->npm run package
+$ npm run package
 ````
