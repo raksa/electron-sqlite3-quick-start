@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "rebuild": "electron-rebuild -f -w sqlite3",
+    "postinstall": "install-app-deps",
     "package": "electron-packager . --production"
   },
   "repository": "https://github.com/raksa/electron-sqlite3-quick-start",
@@ -21,14 +21,14 @@
   "author": "Raksa Eng",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^1.4.15",
-    "electron-packager": "^8.6.0",
-    "electron-prebuilt": "^1.4.13",
-    "electron-rebuild": "^1.5.7"
+    "electron": "^3.0.10",
+    "electron-builder": "^20.38.2",
+    "electron-packager": "^12.2.0"
   },
   "dependencies": {
-    "bootstrap": "^3.3.7",
-    "jquery": "^3.2.1",
-    "sqlite3": "^3.1.8"
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.6",
+    "sqlite3": "^4.0.4"
   }
 }

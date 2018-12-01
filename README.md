@@ -10,7 +10,7 @@ $ cd electron-sqlite3-quick-start
 
 $ npm install
 
-$ npm run rebuild
+$ npm run postinstall
 
 $ npm run start
 ````

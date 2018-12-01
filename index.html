@@ -36,14 +36,16 @@
   </div>
   <script>
     $(document).ready(function () {
-      db.each("SELECT rowid AS id, info FROM info_table", function (err, row) {
-        var tr = "<tr>" +
-          "<th scope=\"row\">" + row.id + "</th>" +
-          "<td>" + row.info + "</td>" +
-          "</tr>";
-        $('#tableBody').append(tr);
-      });
-      db.close();
+      if (db) {
+        db.each("SELECT rowid AS id, info FROM info_table", function (err, row) {
+          var tr = "<tr>" +
+            "<th scope=\"row\">" + row.id + "</th>" +
+            "<td>" + row.info + "</td>" +
+            "</tr>";
+          $('#tableBody').append(tr);
+        });
+        db.close();
+      }
     });
   </script>
 </body>
