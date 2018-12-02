@@ -13,7 +13,11 @@ db.serialize(() => {
     stmt.finalize();
 
     db.each("SELECT rowid AS id, info FROM info_table", (err, row) => {
-        console.log(row.id + ": " + row.info);
+        if (err) {
+            console.error(err);
+        } else {
+            console.log(row.id + ": " + row.info);
+        }
     });
 });
 
