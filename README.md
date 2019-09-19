@@ -2,22 +2,14 @@
 
 An example of electron app with sqlite3
 
+Install dependencies
+
+* `$ npm i`
+
 Make running
-````
-$ git clone https://github.com/raksa/electron-sqlite3-quick-start.git
 
-$ cd electron-sqlite3-quick-start
-
-$ npm install
-
-$ npm run postinstall
-
-$ npm run start
-````
+* `$ npm run postinstall`
+* `$ npm run start`
 
 Make packaging
-````
-$ npm install
-
-$ npm run package
-````
+* `$ npm run package`

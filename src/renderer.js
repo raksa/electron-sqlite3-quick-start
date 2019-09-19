@@ -1,7 +1,7 @@
 "use strict";
 
-const sqlite3 = require('sqlite3').verbose();
-const db = new sqlite3.Database('app.sqlite3');
+const sqlite3 = require("sqlite3").verbose();
+const db = new sqlite3.Database("app.sqlite3");
 
 db.serialize(() => {
     db.run("CREATE TABLE info_table (info TEXT)", e => {

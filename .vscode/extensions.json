@@ -1,0 +1,15 @@
+{
+    "recommendations": [
+        "alefragnani.Bookmarks",
+        "CoenraadS.bracket-pair-colorizer",
+        "dbaeumer.vscode-eslint",
+        "eamodio.gitlens",
+        "EditorConfig.EditorConfig",
+        "johnpapa.vscode-peacock",
+        "mhutchie.git-graph",
+        "mikestead.dotenv",
+        "streetsidesoftware.code-spell-checker",
+        "VisualStudioExptTeam.vscodeintellicode",
+        "vscode-icons-team.vscode-icons",
+    ]
+}
