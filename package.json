@@ -2,7 +2,7 @@
   "name": "electron-sqlite3-quick-start",
   "version": "1.0.0",
   "description": "An example of electron with sqlite3",
-  "main": "src/main.js",
+  "main": "src/server/main.js",
   "scripts": {
     "start": "electron .",
     "postinstall": "electron-builder install-app-deps",
