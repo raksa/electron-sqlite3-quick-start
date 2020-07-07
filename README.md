@@ -6,9 +6,8 @@ Install dependencies
 
 * `$ npm i`
 
-Make running
+Run app
 
-* `$ npm run postinstall`
 * `$ npm run start`
 
 Make packaging
