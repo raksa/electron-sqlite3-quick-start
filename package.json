@@ -21,7 +21,7 @@
   "author": "Raksa Eng",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^9.4.0",
+    "electron": "^13.6.6",
     "electron-builder": "^21.0.15",
     "electron-packager": "^12.2.0",
     "eslint": "^6.4.0"
